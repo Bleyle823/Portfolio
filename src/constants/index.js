@@ -23,6 +23,10 @@ import {
   jobit,
   tripguide,
   threejs,
+  ethglobal,
+  encode,
+  Multi,
+  Inject
 } from "../assets";
 
 export const navLinks = [
@@ -46,11 +50,11 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Frontend Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Solidity Developer",
     icon: backend,
   },
   {
@@ -63,6 +67,10 @@ const technologies = [
   {
     name: "HTML 5",
     icon: html,
+  },
+  {
+    name: " ethglobal",
+    icon:  ethglobal,
   },
   {
     name: "CSS 3",
@@ -116,55 +124,70 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Flight🛩️",
+    company_name: " Built at Ethglobal's HackFS 2023",
+    icon:  ethglobal,
+    iconBg: "#FFFFFF",
+    date: "June 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Flight is a decentralized platform that creates a vibrant community where Drone pilots, racers, and drone enthusiasts can hang out, connect, chat, collaborate and even go out on virtual FPV drone expeditions ",
+      "Winner of : 🎥 Push Protocol — Best use of Push Video ",
+      
+      "Built Using : Next Js, Tailwind css , Filecoin Virtual Machine, ENS, ApeCoin, Push Protocol , Huddle 01, Lit Protocol ",
+      "Project Link : https://ethglobal.com/showcase/flight-4b08a",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Milky Wei 🌌",
+    company_name: "Built at Ethglobal's  Space Warp Hackathon",
+    icon: ethglobal,
+    iconBg: "#FFFFFF",
+    date: "March 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "A Decentralized Game Development Assets Marketplace",
+      "Winner of : 🥇 Push Protocol — Best Use ",
+      "Built Using : Next Js, Tailwind css , Push Protocol , Filecoin Virtual Machine, Spheron",
+      "Project Link: https://ethglobal.com/showcase/milky-wei-bmcx3",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "JPEGX🖼️",
+    company_name: "Built at Ethglobal's  ETHOnline Hackathon(Frontend)",
+    icon: ethglobal,
+    iconBg: "#FFFFFF",
+    date: "September 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Decentralized NFT Options Protocol using a Pool Design for liquidity and pricing",
+      "This project combines NFT collection pool contracts with oracles providing floor prices to create an NFT options platform that is designed with maximum liquidity in mind.",
+      "Winner of : 💸 Superfluid — Best DeFi Hack",
+      "Winner of : 🥉 Tellor — Best Use ",
+      "Project Link: https://ethglobal.com/showcase/jpegx-mq68d",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Universal Bluecheck",
+    company_name: "Encode Club's Future of Blockchain University Hackathon",
+    icon: encode ,
+    iconBg: "#000080",
+    date: "September 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Universal Bluecheck aims to combat AI-generated impersonation and verify media authenticity before sharing content on web 2 apps like Instagram, Spotify, and Facebook.",
+      "Winner of : 💸 Arbitrum — Open Challenge",
+      "Project Video: https://www.youtube.com/watch?v=zgBw_j_4keo",,
+      "Project Link: https://www.blog.encode.club/future-of-blockchain-university-hackathon-prizewinners-and-summary-d2e7e7cc819b ",
+    ],
+  },
+  {
+    title: "Plusheaven.eth🎲",
+    company_name: "Built at Ethglobal's  ETHOnline Hackathon(Frontend)",
+    icon: ethglobal,
+    iconBg: "#FFFFFF",
+    date: "September 2022",
+    points: [
+      "Plusheaven is a decentralized gaming & betting platform! Users can connect to the platform with their wallets via the web3 connect button. Currently, only the HiLo betting game is available, and the user can place bets, alongside making a deposit to lock in their bets, and if they win at the end of the round, they get paid the right amount for the bet placed.",
+      "Winner of : 🏊‍♂️ Valist — Pool Prize",
+      "Project Link: https://github.com/I-T-C-R-W/plusheaven ",
+      "https://ethglobal.com/showcase/plusheaven-eth-04ybr",
     ],
   },
 ];
@@ -194,13 +217,29 @@ const testimonials = [
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
+  {
+    testimonial:
+      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Lisa Wang",
+    designation: "CTO",
+    company: "456 Enterprises",
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
+  },
+   {
+    testimonial:
+      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Lisa Wang",
+    designation: "CTO",
+    company: "456 Enterprises",
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
+  },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "MULTI",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Multistreaming solution built on Livepeer.",
     tags: [
       {
         name: "react",
@@ -215,13 +254,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: Multi,
+    source_code_link: "https://github.com/Digital-Artifacts/MULTI",
   },
   {
-    name: "Job IT",
+    name: "Inject",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A decentralized application (DApp) that enables users to claim unique NFTs by verifying their presence at specific locations where protests and demonstrations are taking place.",
     tags: [
       {
         name: "react",
@@ -236,8 +275,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: Inject,
+    source_code_link: "https://github.com/Bleyle823/Inject",
   },
   {
     name: "Trip Guide",

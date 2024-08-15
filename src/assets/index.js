@@ -25,10 +25,15 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import ethglobal from "./company/ethglobal.png"
+import encode from "./company/encode.png"
+import Multi from "./company/Multi.png"
+import Inject from "./company/inject.png"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
 
 export {
   logo,
@@ -59,4 +64,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  ethglobal,
+  encode,
+  Multi,
+  Inject
 };
